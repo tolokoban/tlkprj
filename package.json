@@ -10,7 +10,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "cp package.json README.md dist/ && tsc --pretty",
-        "deploy": "npm publish dist/"
+        "prepublish": "npm run build",
+        "publish": "npm publish dist/"
     },
     "repository": {
         "type": "git",
