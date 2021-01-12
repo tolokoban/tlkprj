@@ -6,7 +6,8 @@
     "types": "src/index.d.ts",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
-        "build": "cp package.json dist/ && tsc --pretty"
+        "build": "cp package.json README.md dist/ && tsc --pretty",
+        "deploy": "npm publish dist/"
     },
     "repository": {
         "type": "git",
