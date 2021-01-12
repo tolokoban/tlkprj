@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import FS from 'fs'
 import Path from 'path'
 import Config from '../package.json'
