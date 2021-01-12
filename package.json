@@ -1,37 +1,40 @@
 {
-  "name": "tlkprj",
-  "version": "0.2.0",
-  "description": "Create and build Tolokoban's projects",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cp package.json README.md dist/ && tsc --pretty",
-    "deploy": "npm publish dist/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tolokoban/tlkprj.git"
-  },
-  "keywords": [
-    "Tolokoban",
-    "Build",
-    "Compile",
-    "Typescript"
-  ],
-  "author": "Tolokoban",
-  "license": "GPL-3.0",
-  "bugs": {
-    "url": "https://github.com/tolokoban/tlkprj/issues"
-  },
-  "homepage": "https://github.com/tolokoban/tlkprj#readme",
-  "devDependencies": {
-    "@types/chalk": "^2.2.0",
-    "@types/node": "^14.14.20",
-    "chalk": "^4.1.0",
-    "typescript": "^4.1.3"
-  },
-  "dependencies": {
-    "json5": "^2.1.3"
-  }
+    "name": "tlkprj",
+    "version": "0.2.0",
+    "description": "Create and build Tolokoban's projects",
+    "bin": {
+        "tlkprj": "src/index.js"
+    },
+    "main": "src/index.js",
+    "types": "src/index.d.ts",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "cp package.json README.md dist/ && tsc --pretty",
+        "deploy": "npm publish dist/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tolokoban/tlkprj.git"
+    },
+    "keywords": [
+        "Tolokoban",
+        "Build",
+        "Compile",
+        "Typescript"
+    ],
+    "author": "Tolokoban",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/tolokoban/tlkprj/issues"
+    },
+    "homepage": "https://github.com/tolokoban/tlkprj#readme",
+    "devDependencies": {
+        "typescript": "^4.1.3"
+    },
+    "dependencies": {
+        "@types/chalk": "^2.2.0",
+        "@types/node": "^14.14.20",
+        "chalk": "^4.1.0",
+        "json5": "^2.1.3"
+    }
 }
