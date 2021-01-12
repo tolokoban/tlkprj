@@ -42,6 +42,7 @@ exports.default = {
     json: json,
     newline: newline,
     red: red,
+    status: status,
     title: title
 };
 function action(text) {
@@ -140,6 +141,10 @@ function newline() {
 }
 function red(text) {
     console.log(chalk_1.default.red(text));
+}
+function status(name, message) {
+    if (message === void 0) { message = ""; }
+    console.log(chalk_1.default.bgCyanBright.black.bold(" " + name.trim().toUpperCase() + " "), message);
 }
 function title(name, version) {
     var line = "+-" + repeat("-", name.length + version.length + 1) + "-+";

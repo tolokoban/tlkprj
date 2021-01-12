@@ -11,6 +11,7 @@ export default {
     json,
     newline,
     red,
+    status,
     title
 }
 
@@ -93,6 +94,10 @@ function newline() {
 
 function red(text: string) {
     console.log(Chalk.red(text))
+}
+
+function status(name: string, message = "") {
+    console.log(Chalk.bgCyanBright.black.bold(` ${name.trim().toUpperCase()} `), message)
 }
 
 function title(name: string, version: string) {

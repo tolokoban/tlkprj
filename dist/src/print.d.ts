@@ -7,6 +7,7 @@ declare const _default: {
     json: typeof json;
     newline: typeof newline;
     red: typeof red;
+    status: typeof status;
     title: typeof title;
 };
 export default _default;
@@ -18,5 +19,6 @@ declare function info(text: string): void;
 declare function json(obj: any): void;
 declare function newline(): void;
 declare function red(text: string): void;
+declare function status(name: string, message?: string): void;
 declare function title(name: string, version: string): void;
 //# sourceMappingURL=print.d.ts.map
