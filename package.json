@@ -1,6 +1,6 @@
 {
     "name": "tlkprj",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "description": "Create and build Tolokoban's projects",
     "bin": {
         "tlkprj": "src/index.js"
