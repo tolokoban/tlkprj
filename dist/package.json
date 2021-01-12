@@ -1,6 +1,6 @@
 {
     "name": "tlkprj",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "description": "Create and build Tolokoban's projects",
     "bin": {
         "tlkprj": "src/index.js"
@@ -10,7 +10,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "cp package.json README.md dist/ && tsc --pretty",
-        "deploy": "npm publish dist/"
+        "prepublish": "npm run build",
+        "publish": "npm publish dist/"
     },
     "repository": {
         "type": "git",
@@ -29,6 +30,7 @@
     },
     "homepage": "https://github.com/tolokoban/tlkprj#readme",
     "devDependencies": {
+        "tslint": "^6.1.3",
         "typescript": "^4.1.3"
     },
     "dependencies": {

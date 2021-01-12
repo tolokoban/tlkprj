@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 "use strict";
 var __values = (this && this.__values) || function(o) {
     var s = typeof Symbol === "function" && Symbol.iterator, m = s && o[s], i = 0;
